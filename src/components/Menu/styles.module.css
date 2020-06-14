@@ -1,0 +1,65 @@
+.Menu_root {
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+    border: 1px solid #aaa;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    margin: 4px 0 2px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.createButton {
+    position: relative;
+    overflow: hidden;
+    padding: 8px;
+    border-width: 0;
+    margin: 4px 0;
+    background-color: #2ecc71;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    color: #ecf0f1;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.createButton:hover {
+    background-color: #27ae60;
+}
+
+.createButton > * {
+    position: relative;
+}
+
+.createButton span {
+    display: block;
+    padding: 12px 24px;
+}
+
+.createButton::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0;
+    padding-top: 0;
+    background-color: rgba(236, 240, 241, 0.3);
+    border-radius: 100%;
+    content: '';
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.createButton:active::before {
+    width: 120%;
+    padding-top: 120%;
+    transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+}

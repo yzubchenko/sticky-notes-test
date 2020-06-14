@@ -1,0 +1,10 @@
+.Stretcher_root {
+    position: absolute;
+    right: -6px;
+    bottom: -1px;
+    border-top: 10px solid #6f6f6f;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    cursor: se-resize;
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,40 @@
+.ColorRadio_root {
+    display: inline-block;
+    margin: 8px;
+}
+
+.radio {
+    display: none;
+}
+
+.checkMark {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+input[type='radio']:checked + label .radioBody .checkMark {
+    opacity: 1;
+}
+
+.radioBody {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    margin-right: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    line-height: 10px;
+    text-align: center;
+}
+
+.textContainer {
+    font-size: 14px;
+    vertical-align: middle;
+}
